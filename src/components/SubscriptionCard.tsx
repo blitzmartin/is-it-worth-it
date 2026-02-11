@@ -15,10 +15,12 @@ export const SubscriptionCard = ({ sub, currencySymbol, remove }: Props) => {
       <div>
         <h3 className="font-medium text-base">{sub.name}</h3>
 
-        <p className="text-sm text-muted">
-          {currencySymbol}
-          {sub.amount} / {sub.frequency}
-        </p>
+        {(sub.frequency === "monthly" || sub.frequency === "weekly") && (
+          <p className="text-xs text-muted">
+            {currencySymbol}
+            {sub.amount} / {sub.frequency}
+          </p>
+        )}
 
         <p className="text-sm mt-1 text-accent font-medium">
           → {currencySymbol}
