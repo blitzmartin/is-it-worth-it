@@ -50,7 +50,7 @@ export const App = () => {
     <div className="min-h-screen bg-base text-base p-6">
       <div className="max-w-2xl mx-auto space-y-8">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold">Is it worth it?</h1>
+          <h1 className="text-4xl font-bold">Is it worth it?</h1>
           <CurrencySelector currency={currency} setCurrency={setCurrency} />
         </div>
 
