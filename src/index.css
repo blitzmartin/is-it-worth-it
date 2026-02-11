@@ -14,7 +14,7 @@ body,
   --color-text: 15 23 42; /* slate-900 */
   --color-muted: 100 116 139; /* slate-500 */
   --color-border: 226 232 240; /* slate-200 */
-  --color-accent: 59 130 246; /* blue-500 */
+  --color-accent: 229 9 20; /* red */
 }
 
 @layer utilities {

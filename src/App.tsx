@@ -39,6 +39,13 @@ export const App = () => {
     setSubscriptions(subscriptions.filter((s) => s.id !== id));
   };
 
+  const resetSubscriptions = () => {
+    if (confirm("Are you sure you want to clear all subscriptions?")) {
+      setSubscriptions([]);
+      localStorage.removeItem("subscriptions");
+    }
+  };
+
   return (
     <div className="min-h-screen bg-base text-base p-6">
       <div className="max-w-2xl mx-auto space-y-8">
@@ -65,12 +72,31 @@ export const App = () => {
           ))}
         </div>
 
-        <TotalSummary
-          total={total}
-          currencySymbol={currencySymbols[currency]}
-        />
+        <div className="mt-10 border-t border-base pt-6">
+          <div className="flex justify-between items-center">
+            <h2 className="text-lg font-medium text-muted">
+              Total yearly cost
+            </h2>
+
+            <button
+              onClick={resetSubscriptions}
+              className="bg-accent text-white px-4 py-2 rounded text-sm hover:opacity-90 transition-opacity"
+            >
+              Reset All
+            </button>
+          </div>
+
+          {/* Componente TotalSummary rimane solo per mostrare il totale */}
+          <TotalSummary
+            total={total}
+            currencySymbol={currencySymbols[currency]}
+          />
+        </div>
 
         <div className="pt-10 text-sm text-muted border-t border-base gap-3 flex flex-col">
+          <h3 className="text-lg text-slate-700 font-bold">
+            About this project
+          </h3>
           <p>
             We are slowly moving into an “own nothing” economy. Software, music,
             films, tools, everything is rented.
