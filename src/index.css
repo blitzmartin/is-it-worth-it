@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* ===== THEME TOKENS ===== */
+
+:root {
+  --color-bg: 248 250 252; /* slate-50 */
+  --color-surface: 255 255 255; /* white */
+  --color-text: 15 23 42; /* slate-900 */
+  --color-muted: 100 116 139; /* slate-500 */
+  --color-border: 226 232 240; /* slate-200 */
+  --color-accent: 59 130 246; /* blue-500 */
+}
+
+@layer utilities {
+  .bg-base {
+    background-color: rgb(var(--color-bg));
+  }
+
+  .bg-surface {
+    background-color: rgb(var(--color-surface));
+  }
+
+  .text-base {
+    color: rgb(var(--color-text));
+  }
+
+  .text-muted {
+    color: rgb(var(--color-muted));
+  }
+
+  .border-base {
+    border-color: rgb(var(--color-border));
+  }
+
+  .bg-accent {
+    background-color: rgb(var(--color-accent));
+  }
+
+  .text-accent {
+    color: rgb(var(--color-accent));
+  }
+}
