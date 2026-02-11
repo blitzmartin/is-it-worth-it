@@ -54,8 +54,8 @@ export const App = () => {
         </div>
 
         <p className="text-muted text-sm">
-          Add your subscriptions. See what you really spend. No accounts. No
-          tracking. Everything stays in your browser.
+          Add your subscriptions and confront the ugly truth of what you really
+          spend
         </p>
 
         <AddSubscriptionForm addSubscription={addSubscription} />
