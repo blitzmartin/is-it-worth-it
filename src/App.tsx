@@ -1,5 +1,4 @@
 import { useMemo } from "react";
-
 import {
   AddSubscriptionForm,
   CurrencySelector,
@@ -85,8 +84,6 @@ export const App = () => {
               Reset All
             </button>
           </div>
-
-          {/* Componente TotalSummary rimane solo per mostrare il totale */}
           <TotalSummary
             total={total}
             currencySymbol={currencySymbols[currency]}
@@ -110,12 +107,17 @@ export const App = () => {
             invisible visible.
           </p>
           <p>
-            This tool does not require an account. There is no AI. There is no
-            tracking and no data collection. Everything stays in your browser.
+            This tool does not require an account, it's not AI driven, it has no
+            trackers, no data collection. It only uses your browser's local
+            storage to save your
           </p>
-          <p className="mt-2 text-xs text-center">
+          <a
+            href="https://paperboardlabs.com"
+            target="_blank"
+            className="mt-2 text-xs text-center"
+          >
             Paper Board Labs &copy;2026
-          </p>
+          </a>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import type { Subscription } from '../types/subscription';
 
-export function calculateYearlyCost(sub: Subscription): number {
+export const  calculateYearlyCost = (sub: Subscription): number => {
   switch (sub.frequency) {
     case "monthly":
       return sub.amount * 12;

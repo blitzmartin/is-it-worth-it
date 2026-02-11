@@ -11,7 +11,7 @@ export const TotalSummary = ({ total, currencySymbol }: Props) => {
         {total.toFixed(2)}
       </p>
       <p className="text-sm text-muted mt-3">
-        That’s the price of access. Not ownership.
+        (price of access, not ownership)
       </p>
     </div>
   );
