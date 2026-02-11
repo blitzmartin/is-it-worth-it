@@ -113,7 +113,9 @@ export const App = () => {
             This tool does not require an account. There is no AI. There is no
             tracking and no data collection. Everything stays in your browser.
           </p>
-          <p className="mt-2">Paper Board Labs</p>
+          <p className="mt-2 text-xs text-center">
+            Paper Board Labs &copy;2026
+          </p>
         </div>
       </div>
     </div>
