@@ -10,7 +10,7 @@ export const CurrencySelector = ({ currency, setCurrency }: Props) => {
     <select
       value={currency}
       onChange={(e) => setCurrency(e.target.value as Currency)}
-      className="bg-surface border border-base rounded px-3 py-1  text-base outline-none"
+      className="bg-surface border border-base rounded px-3 py-1 text-base outline-none"
     >
       <option value="EUR">EUR €</option>
       <option value="USD">USD $</option>

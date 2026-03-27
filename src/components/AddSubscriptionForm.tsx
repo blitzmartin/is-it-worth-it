@@ -63,7 +63,7 @@ export const AddSubscriptionForm = ({ addSubscription }: Props) => {
         type="submit"
         className="w-full bg-accent text-white rounded py-2 font-medium transition-opacity hover:opacity-90"
       >
-        + Add subscription
+        + Add
       </button>
     </form>
   );

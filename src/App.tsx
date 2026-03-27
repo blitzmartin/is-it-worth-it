@@ -99,17 +99,12 @@ export const App = () => {
             films, tools, everything is rented.
           </p>
           <p>
-            Subscriptions feel small but together they shape how much freedom we
-            actually have.
-          </p>
-          <p>
-            This project was created to raise awareness and to make the
-            invisible visible.
+            Subscriptions feel small but their sum weighs on our finances without us even noticing. This project was created to raise awareness and to make the invisible visible.
           </p>
           <p>
             This tool does not require an account, it's not AI driven, it has no
             trackers, no data collection. It only uses your browser's local
-            storage to save your
+            storage to save your subscriptions.
           </p>
           <a
             href="https://paperboardlabs.com"
